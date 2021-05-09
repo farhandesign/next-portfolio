@@ -1,0 +1,40 @@
+.right__col {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 120px;
+	height: 190px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	a {
+		transform: rotate(90deg);
+		font-size: 14px;
+		color: #a8b2d1;
+		font-weight: 500;
+		letter-spacing: 1px;
+		margin: 1px;
+		transition: 0.25s ease;
+	}
+	.col__email:hover {
+		color: #63ffd9;
+	}
+	.line {
+		background: #a8b2d1;
+		width: 1px;
+		height: 50px;
+	}
+}
+
+@media (max-width: 1080px) {
+	.right__col {
+		width: 80px;
+	}
+}
+
+@media (max-width: 768px) {
+	.right__col {
+		display: none;
+	}
+}
