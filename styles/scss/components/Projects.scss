@@ -1,13 +1,14 @@
 .projects-section {
+	// background: rgb(100, 63, 63);
 	width: 100%;
 	height: auto;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 120px;
 	.projects__h {
 		width: 100%;
 		display: flex;
 		margin-bottom: 40px;
-		margin-top: 80px;
 		h1 {
 			font-size: 26px;
 			color: #ccd6f6;
@@ -31,7 +32,6 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		margin-bottom: 120px;
 		position: relative;
 		.project__picture {
 			position: absolute;
@@ -278,6 +278,7 @@
 			}
 		}
 		.project__container2 {
+			margin-bottom: 40px;
 			.project__picture {
 				img {
 					filter: opacity(30%);

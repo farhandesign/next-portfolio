@@ -11,16 +11,16 @@ const About = () => {
 				<div className="about__me">
 					<div className="about__p">
 						<div className="intro">
-							<p>Hello! I'm Farhan, a web developer based in Dubai, UAE.</p>
 							<p>
 								I enjoy creating things that live on the internet, whether that be websites,
 								applications, or anything in between. My goal is to always build products that provide
 								pixel-perfect, performant experiences.
 							</p>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam , quis nostrud
-								exercitation ullamco.
+								Creative solution seeker with a keen eye for design. Excellent work ethic and ability to
+								leverage technical, analytical and problem-solving skills. Committed to learning and
+								growing as a developer. Adept at working and contributing to a highly collaborative work
+								environment.
 							</p>
 							<p>Here are a few technologies I've been working with:</p>
 						</div>
@@ -29,6 +29,7 @@ const About = () => {
 								<h2>FRONTEND</h2>
 								<p>Html, CSS & SCSS</p>
 								<p>Javascript</p>
+								<p>Bootstrap</p>
 							</div>
 							<div className="col">
 								<h2>BACKEND</h2>
@@ -38,9 +39,8 @@ const About = () => {
 							<div className="col">
 								<h2>FRAMEWORKS</h2>
 								<p>React.js</p>
-
+								<p>Next.js</p>
 								<p>jQuerry</p>
-								<p>Bootstrap</p>
 							</div>
 							<div className="col">
 								<h2>SOURCE CONTROL</h2>
