@@ -20,11 +20,22 @@
 	.col__email:hover {
 		color: #63ffd9;
 	}
+
 	.line {
 		background: #a8b2d1;
 		width: 1px;
 		height: 50px;
 	}
+}
+
+.right__col:hover .line {
+	background: #63ffd9;
+	box-shadow: 0 0 0.5em 0 #63ffd9;
+}
+
+.right__col:hover .col__email {
+	color: #63ffd9;
+	text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.4em currentColor;
 }
 
 @media (max-width: 1080px) {

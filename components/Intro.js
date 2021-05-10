@@ -1,3 +1,5 @@
+import NeonBtn from './NeonBtn';
+
 const Intro = () => {
 	return (
 		<section className="intro__section">
@@ -9,9 +11,10 @@ const Intro = () => {
 					I'm a web developer based in Dubai, UAE specializing in building (and occasionally designing)
 					exceptional websites, applications, and everything in between.
 				</p>
-				<a className="intro__btn" href="mailto:farhan.design@outlook.com">
+				<NeonBtn text="Get In Touch" />
+				{/* <a className="intro__btn" href="mailto:farhan.design@outlook.com">
 					Get In Touch
-				</a>
+				</a> */}
 			</div>
 		</section>
 	);

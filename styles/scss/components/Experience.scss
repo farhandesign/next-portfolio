@@ -1,10 +1,10 @@
 .experience__section {
+	// background: lightseagreen;
 	width: 100%;
-	height: 60vh;
+	height: auto;
 	display: flex;
-
+	margin-bottom: 160px;
 	.experience__content {
-		// background: lightseagreen;
 		width: 85%;
 		height: auto;
 		margin: auto 0 auto auto;
@@ -50,6 +50,7 @@
 						width: 2px;
 						height: 40px;
 						background: #63ffd9;
+						box-shadow: 0 0 2em 0.01em #63ffd9;
 					}
 				}
 				.buttons {
@@ -75,7 +76,8 @@
 			}
 			.r__col {
 				// background: magenta;
-				width: 535px;
+				// width: 535px;
+				width: auto;
 				height: auto;
 				min-height: 265px;
 				display: flex;
@@ -87,6 +89,7 @@
 						font-weight: 600;
 						span {
 							color: #63ffd9;
+							margin-left: 10px;
 						}
 					}
 				}
@@ -202,6 +205,7 @@
 
 @media (max-width: 480px) {
 	.experience__section {
+		margin-bottom: 0px;
 		.experience__content {
 			.exp__h {
 				h1 {
