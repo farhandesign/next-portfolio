@@ -1,11 +1,14 @@
 import '../styles/scss/main.scss';
+import { AnimatePresence } from 'framer-motion';
 import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<Layout>
-			<Component {...pageProps} />
-		</Layout>
+		<AnimatePresence exitBeforeEnter>
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
+		</AnimatePresence>
 	);
 }
 

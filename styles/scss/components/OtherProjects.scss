@@ -67,6 +67,7 @@
 				.card__link {
 					img {
 						width: 20px;
+						margin-left: 16px;
 					}
 				}
 			}
@@ -102,6 +103,7 @@
 		}
 		.card:hover {
 			transform: translateY(-5px);
+			box-shadow: 0 0 0.9em 0 #63ffd9;
 		}
 	}
 	.show {

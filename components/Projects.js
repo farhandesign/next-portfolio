@@ -16,8 +16,8 @@ const Projects = () => {
 					<h1 className="featured">Featured Project</h1>
 					<h1 className="project__name">Campgrounds</h1>
 					<p className="project__p">
-						A nicer look at your GitHub profile and repository stats with data visualizations of your top
-						languages and stars. Sort through your top repos by number of stars, forks, and size.
+						Built a website for camping. Users can create their own camps or leave reviews and ratings for
+						other camps. Integrated Mapbox API to show camp locations.
 					</p>
 					<div className="tech-stack">
 						<p>Node.js</p>
@@ -47,8 +47,8 @@ const Projects = () => {
 					<h1 className="featured">Featured Project</h1>
 					<h1 className="project__name">Evently</h1>
 					<p className="project__p">
-						A nicer look at your GitHub profile and repository stats with data visualizations of your top
-						languages and stars. Sort through your top repos by number of stars, forks, and size.
+						Built a CRUD app for events. Users can signup and post about their own events or share them on
+						other platforms. React-helmet is used to dynamically inject meta data for better SEO.
 					</p>
 					<ul className="tech-stack">
 						<li>React.js</li>

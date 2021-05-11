@@ -1,8 +1,12 @@
+import { motion } from 'framer-motion';
+
 const project = () => {
 	return (
-		<main className="main-container">
-			<h1>Project</h1>
-		</main>
+		<motion.dev exit={{ opacity: 0 }}>
+			<main className="main-container">
+				<h1>Project</h1>
+			</main>
+		</motion.dev>
 	);
 };
 

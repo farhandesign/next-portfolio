@@ -1,12 +1,12 @@
-import Link from 'next/link';
-
 const cards = [
 	{
 		cardId: 111,
-		heading: 'Built a basic e-commerce website with Commerce.js and Stripe',
-		details: 'Building a custom multisite compatible WordPress plugin to build global search with Algolia',
+		heading: 'E-Commerce website with Headless CMS',
+		details: 'Built a basic e-commerce website with Commerce.js and integrated Stripe for payments.',
 		with: [ 'Commerce.Js', 'React', 'Stripe', 'Material-UI' ],
-		gird: 'one'
+		gird: 'one',
+		link: 'https://react-commerce-store.netlify.app',
+		github: 'https://github.com/farhandesign/commercejs-react-store'
 	},
 	{
 		cardId: 112,
@@ -14,7 +14,8 @@ const cards = [
 		details:
 			'A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS',
 		with: [ 'Commerce.Js', 'React', 'Stripe', 'Material-UI' ],
-		gird: 'two'
+		gird: 'two',
+		link: 'https://react-commerce-store.netlify.app/'
 	},
 	{
 		cardId: 113,
@@ -22,14 +23,16 @@ const cards = [
 		details:
 			'Find out how we built a custom headless CMS with Node, Express, and Firebase for a project at Upstatement',
 		with: [ 'Commerce.Js', 'React', 'Stripe', 'Material-UI' ],
-		gird: 'three'
+		gird: 'three',
+		link: 'https://react-commerce-store.netlify.app'
 	},
 	{
 		cardId: 114,
 		heading: 'Google Keep Clone',
 		details: 'A simple Google Keep clone built with Vue and Firebase.',
 		with: [ 'Commerce.Js', 'React', 'Stripe', 'Material-UI' ],
-		gird: 'four'
+		gird: 'four',
+		link: 'https://react-commerce-store.netlify.app'
 	},
 	{
 		cardId: 115,
@@ -37,7 +40,8 @@ const cards = [
 		details:
 			'Embeddable web player widget for Apple Music that lets users log in and listen to full song playback in the browser leveraging MusicKit.js.',
 		with: [ 'Commerce.Js', 'React', 'Stripe', 'Material-UI' ],
-		gird: 'five'
+		gird: 'five',
+		link: 'https://react-commerce-store.netlify.app'
 	},
 	{
 		cardId: 116,
@@ -45,7 +49,8 @@ const cards = [
 		details:
 			'Facebook Messenger chat bot extension featuring authentication and full song streaming from within the Messenger app. Read more about it on The Verge.',
 		with: [ 'Commerce.Js', 'React', 'Stripe', 'Material-UI' ],
-		gird: 'six'
+		gird: 'six',
+		link: 'https://react-commerce-store.netlify.app'
 	}
 ];
 
@@ -62,11 +67,15 @@ const OtherProjects = () => {
 						<div className="card__h">
 							<img className="folder-icon" src="./folder.svg" alt="" />
 							<div>
-								<Link href={`/projects/${card.cardId}`}>
-									<a className="card__link" href="">
-										<img src="./link2.svg" alt="" />
+								{card.github && (
+									<a className="card__link" href={card.github} target="_blank">
+										<img src="./github2.svg" alt="" />
 									</a>
-								</Link>
+								)}
+
+								<a className="card__link" href={card.link} target="_blank">
+									<img src="./link2.svg" alt="" />
+								</a>
 							</div>
 						</div>
 						<div className="card__body">
@@ -82,7 +91,7 @@ const OtherProjects = () => {
 					</div>
 				))}
 			</div>
-			<a className="show" href="">
+			<a className="show" href="https://github.com/farhandesign?tab=repositories">
 				Show More
 			</a>
 		</section>
