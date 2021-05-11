@@ -3,14 +3,15 @@
 	width: 100%;
 	height: auto;
 	display: flex;
-	margin-bottom: 160px;
+	align-items: flex-start;
+	margin-bottom: 80px;
 	.experience__content {
 		width: 85%;
 		height: auto;
+		min-height: 50vh;
 		margin: auto 0 auto auto;
 
 		.exp__h {
-			// background: magenta;
 			width: 100%;
 			display: flex;
 			h1 {
@@ -46,6 +47,7 @@
 					width: 2px;
 					height: 100%;
 					background: #303c55;
+					display: flex;
 					.highlight {
 						width: 2px;
 						height: 40px;

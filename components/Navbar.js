@@ -1,4 +1,22 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
+const easing = [ 0.6, -0.05, 0.01, 0.99 ];
+
+const fadeInUp = {
+	initial: {
+		y: 10,
+		opacity: 0
+	},
+	animate: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			duration: 0.6,
+			ease: easing
+		}
+	}
+};
 
 const Navbar = () => {
 	const handleResume = () => {
@@ -7,11 +25,17 @@ const Navbar = () => {
 
 	return (
 		<nav>
-			<a className="logo" href="/">
+			<motion.a
+				initial={fadeInUp.initial}
+				animate={fadeInUp.animate}
+				transition={{ ease: easing }}
+				className="logo"
+				href="/"
+			>
 				F
-			</a>
+			</motion.a>
 			<div className="links">
-				<ul>
+				<motion.ul initial={fadeInUp.initial} animate={fadeInUp.animate} transition={{ ease: easing }}>
 					<li>
 						<a href="#about">
 							<span>01.</span> About
@@ -37,8 +61,9 @@ const Navbar = () => {
 							Resume
 						</a>
 					</li>
-				</ul>
+				</motion.ul>
 			</div>
+
 			<div className="dropdown__menu">
 				<a className="btn">
 					<svg height="384pt" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg">

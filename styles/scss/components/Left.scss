@@ -13,19 +13,29 @@
 		flex-direction: column;
 		a {
 			transition: 0.25s ease;
-			img {
+			img,
+			.colored__icons {
 				width: 18px;
 				margin-bottom: 24px;
+			}
+			.colored__icons {
+				display: none;
 			}
 		}
 		.social__links:hover {
 			transform: translateY(-5px);
 		}
+		.social__links:hover img {
+			display: none;
+		}
+		.social__links:hover .colored__icons {
+			display: block;
+		}
 	}
 	.line {
 		background: #a8b2d1;
 		width: 1px;
-		height: 190px;
+		height: 200px;
 	}
 }
 
